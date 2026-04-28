@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Estartando UI — Demonstração dos componentes do plugin Tailwind CSS" />
+  <title>estartando-ui — Componentes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Ubuntu:wght@500;700&family=Ubuntu+Mono&display=swap" rel="stylesheet" />
+  <link href="./input.css" rel="stylesheet" />
+</head>
+<body class="min-h-screen bg-background font-sans text-foreground antialiased">
+
+  <div class="mx-auto flex max-w-5xl flex-col gap-16 px-6 py-12 md:px-16">
+
+    <!-- ── Header ──────────────────────────────────────── -->
+    <header class="flex flex-col gap-4">
+      <span class="label-alt uppercase tracking-wider">Estartando Devs / plugin demo</span>
+      <h1 class="font-heading text-4xl font-bold md:text-5xl">estartando-ui</h1>
+      <p class="max-w-xl text-muted-foreground">
+        Componentes Tailwind CSS com tokens alinhados ao design system.
+        Alterne o tema com <code class="font-mono text-sm text-primary">data-theme</code>.
+      </p>
+      <div class="flex gap-2">
+        <button id="theme-toggle-dark" class="btn btn-sm btn-secondary" onclick="document.documentElement.dataset.theme='dark'">
+          🌙 Dark
+        </button>
+        <button id="theme-toggle-light" class="btn btn-sm btn-outline" onclick="document.documentElement.dataset.theme='light'">
+          ☀️ Light
+        </button>
+      </div>
+    </header>
+
+    <!-- ── Buttons ─────────────────────────────────────── -->
+    <section class="flex flex-col gap-6">
+      <h2 class="font-heading text-2xl font-bold">Botões</h2>
+
+      <div class="card card-elevated">
+        <div class="card-header">
+          <h3 class="card-title">Variantes de cor</h3>
+          <p class="card-description">CTA do site e estados secundários.</p>
+        </div>
+        <div class="card-content flex flex-col gap-4">
+          <div class="flex flex-wrap gap-2">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-accent">Accent</button>
+            <button class="btn btn-destructive">Destructive</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-info">Info</button>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button class="btn btn-outline">Outline</button>
+            <button class="btn btn-outline btn-primary">Outline Primary</button>
+            <button class="btn btn-outline btn-accent">Outline Accent</button>
+            <button class="btn btn-ghost">Ghost</button>
+            <button class="btn btn-link">Link</button>
+          </div>
+          <div class="flex flex-wrap gap-2 items-center">
+            <button class="btn btn-xs btn-primary">XS</button>
+            <button class="btn btn-sm btn-primary">SM</button>
+            <button class="btn btn-md btn-primary">MD</button>
+            <button class="btn btn-lg btn-primary">LG</button>
+          </div>
+          <button class="btn btn-cta btn-primary">Inscrever agora</button>
+          <button class="btn btn-cta btn-primary" disabled>Indisponível</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Inputs ──────────────────────────────────────── -->
+    <section class="grid gap-6 lg:grid-cols-2">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Campos de formulário</h3>
+          <p class="card-description">Input, textarea e variantes.</p>
+        </div>
+        <div class="card-content">
+          <div class="form-control">
+            <label class="label" for="name-input">Nome completo</label>
+            <input id="name-input" class="input input-card" placeholder="Seu nome" />
+            <span class="label-alt">Como aparece no certificado.</span>
+          </div>
+          <div class="form-control" style="margin-top: 1rem;">
+            <label class="label" for="bio-input">Sobre você</label>
+            <textarea id="bio-input" class="textarea textarea-card" placeholder="Experiência, objetivos…"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Variantes de input</h3>
+          <p class="card-description">Cores e estados diferentes.</p>
+        </div>
+        <div class="card-content flex flex-col gap-3">
+          <input class="input" placeholder="Default" />
+          <input class="input input-primary" placeholder="Primary border" />
+          <input class="input input-accent" placeholder="Accent border" />
+          <input class="input input-success" placeholder="Success" />
+          <input class="input input-error" placeholder="Error" />
+          <input class="input input-ghost" placeholder="Ghost (focus to reveal)" />
+          <input class="input" placeholder="Disabled" disabled />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Cards ───────────────────────────────────────── -->
+    <section class="flex flex-col gap-6">
+      <h2 class="font-heading text-2xl font-bold">Cards</h2>
+
+      <div class="grid gap-6 lg:grid-cols-3">
+        <div class="card card-hover">
+          <div class="card-header">
+            <h3 class="card-title">Card padrão</h3>
+            <p class="card-description">Com hover lift.</p>
+          </div>
+          <div class="card-content">
+            <p>Conteúdo do card com ring sutil e hover.</p>
+          </div>
+          <div class="card-footer">
+            <span class="label-alt">Footer</span>
+          </div>
+        </div>
+
+        <div class="card card-bordered">
+          <div class="card-header">
+            <h3 class="card-title">Bordered</h3>
+            <p class="card-description">Sem shadow, com border.</p>
+          </div>
+          <div class="card-content">
+            <p>Borda sólida e sem sombra.</p>
+          </div>
+        </div>
+
+        <div class="card card-glass">
+          <div class="card-header">
+            <h3 class="card-title">Glass</h3>
+            <p class="card-description">Glassmorphism effect.</p>
+          </div>
+          <div class="card-content">
+            <p>Blur + transparência.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-elevated card-compact">
+        <div class="card-header">
+          <h3 class="card-title">Compact + Elevated</h3>
+          <p class="card-description">Padding reduzido com shadow elevado.</p>
+        </div>
+        <div class="card-content">
+          <p>Ideal para listas e dashboards.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Theme tokens ────────────────────────────────── -->
+    <section class="flex flex-col gap-4">
+      <h2 class="font-heading text-2xl font-bold">Cores do tema</h2>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="card card-bordered card-compact">
+          <div class="card-content">
+            <div class="h-16 rounded-lg" style="background: var(--color-primary);"></div>
+          </div>
+          <div class="card-content">
+            <span class="label">primary</span>
+            <span class="label-alt font-mono">#81CAA8</span>
+          </div>
+        </div>
+        <div class="card card-bordered card-compact">
+          <div class="card-content">
+            <div class="h-16 rounded-lg" style="background: var(--color-accent);"></div>
+          </div>
+          <div class="card-content">
+            <span class="label">accent</span>
+            <span class="label-alt font-mono">#00BFA6</span>
+          </div>
+        </div>
+        <div class="card card-bordered card-compact">
+          <div class="card-content">
+            <div class="h-16 rounded-lg" style="background: var(--color-brand-purple);"></div>
+          </div>
+          <div class="card-content">
+            <span class="label">brand-purple</span>
+            <span class="label-alt font-mono">#6C63FF</span>
+          </div>
+        </div>
+        <div class="card card-bordered card-compact">
+          <div class="card-content">
+            <div class="h-16 rounded-lg" style="background: var(--color-destructive);"></div>
+          </div>
+          <div class="card-content">
+            <span class="label">destructive</span>
+            <span class="label-alt font-mono">#F87171</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

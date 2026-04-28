@@ -1,0 +1,51 @@
+{
+  "name": "@estartando/ui",
+  "version": "0.1.0",
+  "description": "Plugin Tailwind CSS modular com componentes e design tokens — Estartando Devs",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./components": "./components/index.js",
+    "./components/*": "./components/*.js",
+    "./themes": "./themes/index.js",
+    "./themes/*": "./themes/*.js"
+  },
+  "type": "commonjs",
+  "files": [
+    "index.js",
+    "components/",
+    "themes/",
+    "LICENSE",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "keywords": [
+    "tailwindcss",
+    "tailwindcss-plugin",
+    "plugin",
+    "ui",
+    "components",
+    "design-system",
+    "estartando",
+    "dark-mode",
+    "css-variables",
+    "design-tokens"
+  ],
+  "author": "EstartandoDevs",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EstartandoDevs/ui",
+    "directory": "web/ui"
+  },
+  "homepage": "https://github.com/EstartandoDevs/ui/tree/main/web/ui#readme",
+  "bugs": {
+    "url": "https://github.com/EstartandoDevs/ui/issues"
+  }
+}

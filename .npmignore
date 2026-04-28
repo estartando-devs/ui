@@ -1,0 +1,14 @@
+# Development & examples
+examples/
+node_modules/
+.vite/
+
+# Editor & OS
+.DS_Store
+.idea/
+.vscode/
+*.sw?
+
+# Git
+.git/
+.gitignore
