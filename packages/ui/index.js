@@ -6,18 +6,6 @@
  *
  * Tailwind v4 (CSS-first):
  *   @plugin "@estartando/ui";
- *
- * Tailwind v3 (config-based):
- *   const estartandoUI = require("@estartando/ui");
- *   module.exports = {
- *     plugins: [
- *       estartandoUI({
- *         defaultTheme: "dark",
- *         radius: "0.75rem",
- *         colors: { "--color-primary": "#81caa8" },
- *       }),
- *     ],
- *   };
  */
 
 const plugin = require("tailwindcss/plugin");
@@ -27,7 +15,7 @@ const { generateThemes } = require("./themes");
 /**
  * plugin.withOptions() makes the export work both as:
  *   - A direct import for @plugin (Tailwind v4, called with no args)
- *   - A factory call for plugins: [estartandoUI({ ... })]  (Tailwind v3)
+ *   - A factory call for custom configuration overriding defaults
  */
 module.exports = plugin.withOptions(
   /**

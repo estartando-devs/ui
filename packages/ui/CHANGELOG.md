@@ -9,7 +9,7 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ### Added
 
-- **Plugin principal** com suporte a Tailwind v3 (config) e v4 (`@plugin`)
+- **Plugin principal** exclusivo para Tailwind v4 (`@plugin`)
 - **Componentes**: `btn`, `input`, `textarea`, `card`, `form-control`, `label`
 - **Temas**: `dark` (padrão) e `light` via `data-theme`
 - **Design tokens**: cores, radius, sombras e tipografia como CSS variables

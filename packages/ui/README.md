@@ -11,21 +11,11 @@ Plugin Tailwind CSS modular inspirado no daisyUI, alinhado ao design system do *
 npm install @estartando/ui
 ```
 
+## Requisitos
+
+- Tailwind CSS v4 ou superior. Este plugin não é compatível com versões anteriores.
+
 ## Uso
-
-### Tailwind v3 (config-based)
-
-```js
-// tailwind.config.js
-const estartandoUI = require("@estartando/ui");
-
-module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx,html}"],
-  plugins: [estartandoUI()],
-};
-```
-
-### Tailwind v4 (CSS-first)
 
 ```css
 /* app.css */
@@ -123,21 +113,15 @@ const buttonComponent = require("@estartando/ui/components/button");
 
 ## Publicação no npm
 
+A publicação é gerenciada na raiz do monorepo usando **Bun**.
+
 ```bash
-cd tailwind-plugin
+# 1. Login no npm (requer org @estartando)
+bun npm login
 
-# 1. Login (requer org @estartando no npm)
-npm login
-
-# 2. Verificar nome disponível
-npm view @estartando/ui
-
-# 3. Publicar (--access public obrigatório para scoped packages)
-npm publish --access public
-
-# 4. Próximas versões
-npm version patch  # ou minor / major
-npm publish --access public
+# 2. Atualizar versão e publicar automaticamente
+# Isso irá atualizar o package.json, criar a tag e publicar o pacote
+bun run release:patch  # ou release:minor / release:major
 ```
 
 ## Escalabilidade
