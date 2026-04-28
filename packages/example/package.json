@@ -1,0 +1,16 @@
+{
+  "name": "@estartando/example",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "bunx --bun vite"
+  },
+  "dependencies": {
+    "@estartando/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}

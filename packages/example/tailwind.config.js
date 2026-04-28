@@ -5,9 +5,9 @@
  *   const estartandoUI = require("@estartando/ui");
  *
  * If local (development):
- *   const estartandoUI = require("../");
+ *   const estartandoUI = require("@estartando/ui");  // resolved via workspace
  */
-const estartandoUI = require("../");
+const estartandoUI = require("@estartando/ui");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
