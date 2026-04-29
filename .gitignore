@@ -12,3 +12,6 @@ dist/
 .idea/
 .vscode/
 *.sw?
+
+*storybook.log
+storybook-static

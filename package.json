@@ -1,9 +1,11 @@
 {
   "name": "@estartando/monorepo",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": ["packages/*", "apps/*"],
   "scripts": {
-    "dev:example": "bun run --filter @estartando/example dev",
+    "dev:docs": "bun run --filter @estartando/docs dev",
+    "dev:storybook": "bun run --filter @estartando/storybook storybook",
+    "build:storybook": "bun run --filter @estartando/storybook build-storybook",
     "lint": "bun run --filter '*' lint",
     "publish:ui": "cd packages/ui && bun publish --access public",
     "publish:ui:dry": "cd packages/ui && bun publish --access public --dry-run",
