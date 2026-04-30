@@ -24,6 +24,24 @@ module.exports = {
   "--color-brand-purple": "#6c63ff",
   "--color-brand-teal": "#00bfa6",
 
+  /* ── Domains (Frontend, Design, Backend) ───────────── */
+  "--color-neutral-light": "#F8F8F8",
+  "--color-neutral-medium": "#606062",
+  "--color-neutral-dark": "#161616",
+
+  "--color-frontend-light": "#ACCABC",
+  "--color-frontend-medium": "#A8CABC",
+  "--color-frontend-dark": "#00BFA6",
+
+  "--color-design-light": "#9799FF",
+  "--color-design-medium": "#6C63FF",
+  "--color-design-dark": "#4C45B2",
+
+  "--color-backend-light": "#A0D1E9",
+  "--color-backend-medium": "#1EC0D6",
+  "--color-backend-dark": "#2094B3",
+
+
   /* ── Semantic ─────────────────────────────────────── */
   "--color-muted": "#f0f0f0",
   "--color-muted-foreground": "#6b6b6b",

@@ -105,6 +105,26 @@ module.exports = plugin.withOptions(
             ring: "var(--color-ring)",
             "brand-purple": "var(--color-brand-purple)",
             "brand-teal": "var(--color-brand-teal)",
+            neutral: {
+              light: "var(--color-neutral-light)",
+              medium: "var(--color-neutral-medium)",
+              dark: "var(--color-neutral-dark)",
+            },
+            frontend: {
+              light: "var(--color-frontend-light)",
+              medium: "var(--color-frontend-medium)",
+              dark: "var(--color-frontend-dark)",
+            },
+            design: {
+              light: "var(--color-design-light)",
+              medium: "var(--color-design-medium)",
+              dark: "var(--color-design-dark)",
+            },
+            backend: {
+              light: "var(--color-backend-light)",
+              medium: "var(--color-backend-medium)",
+              dark: "var(--color-backend-dark)",
+            },
           },
           borderRadius: {
             sm: "var(--radius-sm)",

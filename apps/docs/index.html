@@ -163,6 +163,79 @@
       </div>
     </section>
 
+    <!-- ── Novos Componentes ───────────────────────────── -->
+    <section class="flex flex-col gap-6">
+      <h2 class="font-heading text-2xl font-bold">Novos Componentes</h2>
+      
+      <div class="grid gap-6 lg:grid-cols-2">
+        <div class="card">
+          <div class="card-header"><h3 class="card-title">Badges & Avatars</h3></div>
+          <div class="card-content flex flex-col gap-4">
+            <div class="flex gap-2">
+              <span class="badge badge-frontend">Frontend</span>
+              <span class="badge badge-design">Design</span>
+              <span class="badge badge-backend">Backend</span>
+              <span class="badge badge-neutral">Neutral</span>
+            </div>
+            <div class="flex gap-4 items-center">
+              <div class="avatar avatar-md avatar-frontend">FD</div>
+              <div class="avatar avatar-lg avatar-design">DS</div>
+              <div class="avatar avatar-lg avatar-backend">BE</div>
+              <div class="avatar avatar-sm avatar-neutral">NT</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header"><h3 class="card-title">Controles (Switch, Checkbox, Radio)</h3></div>
+          <div class="card-content flex flex-col gap-4">
+            <div class="flex gap-4 items-center">
+              <label class="switch">
+                <input type="checkbox" class="sr-only" checked onchange="this.parentElement.dataset.state = this.checked ? 'checked' : 'unchecked'" />
+                <div class="switch-track"><div class="switch-thumb"></div></div>
+              </label>
+              <span>Switch Ativo</span>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input type="checkbox" class="checkbox" checked /> Checkbox
+              <input type="radio" class="radio" name="demo-radio" checked /> Radio 1
+              <input type="radio" class="radio" name="demo-radio" /> Radio 2
+            </div>
+          </div>
+        </div>
+
+        <div class="card lg:col-span-2">
+          <div class="card-header"><h3 class="card-title">Outros (Toast, Accordion, Tabs)</h3></div>
+          <div class="card-content flex flex-col gap-6">
+            <div class="flex gap-2">
+              <div class="toast toast-frontend">Toast Frontend</div>
+              <div class="toast toast-design">Toast Design</div>
+              <div class="toast toast-backend">Toast Backend</div>
+              <div class="toast toast-success">Toast Sucesso</div>
+            </div>
+            
+            <div class="tabs w-full max-w-md">
+              <div class="tabs-list">
+                <button class="tabs-trigger" data-state="active">Frontend</button>
+                <button class="tabs-trigger">Design</button>
+                <button class="tabs-trigger">Backend</button>
+              </div>
+              <div class="tabs-content">
+                <p>Conteúdo da aba ativa.</p>
+              </div>
+            </div>
+
+            <div class="accordion w-full max-w-md">
+              <div class="accordion-item">
+                <div class="accordion-header">O que é um Design System?</div>
+                <div class="accordion-content">Um conjunto de componentes.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ── Theme tokens ────────────────────────────────── -->
     <section class="flex flex-col gap-4">
       <h2 class="font-heading text-2xl font-bold">Cores do tema</h2>
