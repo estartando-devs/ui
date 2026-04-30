@@ -9,11 +9,9 @@
     "lint": "bun run --filter '*' lint",
     "publish:ui": "cd packages/ui && bun publish --access public",
     "publish:ui:dry": "cd packages/ui && bun publish --access public --dry-run",
-    "version:patch": "cd packages/ui && npm version patch",
-    "version:minor": "cd packages/ui && npm version minor",
-    "version:major": "cd packages/ui && npm version major",
-    "release:patch": "bun run version:patch && bun run publish:ui",
-    "release:minor": "bun run version:minor && bun run publish:ui",
-    "release:major": "bun run version:major && bun run publish:ui"
+    "version:patch": "cd packages/ui && npm version patch --no-workspaces",
+    "version:minor": "cd packages/ui && npm version minor --no-workspaces",
+    "version:major": "cd packages/ui && npm version major --no-workspaces",
+    "release": "bun run scripts/release.js"
   }
 }
