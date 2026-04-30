@@ -7,7 +7,7 @@ version: 0.1.1
 ---
 
 # @estartando/ui
-`@estartando/ui` is a modular Tailwind CSS plugin that provides design tokens and components for the Estartando Devs design system. It uses semantic class names inspired by shadcn/ui and daisyUI.
+`@estartando/ui` is a modular Tailwind CSS plugin that provides design tokens and components for the Estartando Devs design system.
 
 - [GitHub Repository](https://github.com/estartando-devs/ui)
 
