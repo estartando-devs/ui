@@ -1,15 +1,15 @@
-# @estartando — Monorepo
+# @estartando/ui — Monorepo
 
 [![license](https://img.shields.io/npm/l/@estartando/ui.svg)](./LICENSE)
 
-Monorepo do design system e ferramentas do **Estartando Devs**, gerenciado com [Bun Workspaces](https://bun.sh/docs/install/workspaces).
+Repositório da biblioteca de UI e componentes do **Estartando Devs**, gerenciado com Bun Workspaces.
 
 ## Pacotes
 
 | Pacote | Descrição | Diretório |
 |---|---|---|
-| [`@estartando/ui`](./packages/ui) | Plugin Tailwind CSS modular com componentes e design tokens | `packages/ui` |
-| `@estartando/example` | App de demonstração dos componentes (privado) | `packages/example` |
+| [`@estartando/ui`](./packages/ui) | Biblioteca de componentes de UI | `packages/ui` |
+| `@estartando/example` | App de demonstração dos componentes | `packages/example` |
 
 ## Setup
 
@@ -17,7 +17,7 @@ Monorepo do design system e ferramentas do **Estartando Devs**, gerenciado com [
 # Instalar Bun (se necessário)
 curl -fsSL https://bun.sh/install | bash
 
-# Instalar dependências de todos os workspaces
+# Instalar dependências
 bun install
 ```
 
@@ -34,17 +34,12 @@ bun run lint
 ## Estrutura
 
 ```
-├── package.json          ← Root monorepo
+├── package.json
 ├── bun.lock
 ├── LICENSE
 └── packages/
     ├── ui/               ← @estartando/ui (publicado no npm)
-    │   ├── index.js
-    │   ├── components/
-    │   └── themes/
-    └── example/          ← App de demonstração (privado)
-        ├── index.html
-        └── vite.config.js
+    └── example/          ← App de demonstração
 ```
 
 ## Licença
