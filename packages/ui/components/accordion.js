@@ -22,6 +22,11 @@ module.exports = function accordionComponent() {
     ".accordion-header:hover": {
       textDecoration: "underline",
     },
+    ".accordion-header:focus-visible": {
+      outline: "none",
+      boxShadow: "0 0 0 3px color-mix(in srgb, var(--color-ring) 50%, transparent)",
+      borderRadius: "var(--radius-sm)",
+    },
     ".accordion-content": {
       overflow: "hidden",
       fontSize: "0.875rem",

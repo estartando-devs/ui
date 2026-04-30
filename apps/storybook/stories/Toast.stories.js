@@ -8,15 +8,15 @@ export default {
     label: { control: 'text' },
     variant: {
       control: { type: 'select' },
-      options: ['frontend', 'design', 'backend', 'success', 'neutral'],
+      options: ['primary', 'secondary', 'accent', 'success', 'muted'],
     },
   },
 };
 
-export const Frontend = {
+export const Primary = {
   args: {
-    label: 'Toast Frontend',
-    variant: 'frontend',
+    label: 'Toast Primary',
+    variant: 'primary',
   },
 };
 

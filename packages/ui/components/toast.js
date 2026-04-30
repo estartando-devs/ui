@@ -13,20 +13,20 @@ module.exports = function toastComponent() {
       boxShadow: "var(--shadow-md)",
       transition: "all 200ms cubic-bezier(0.4, 0, 0.2, 1)",
     },
-    ".toast-frontend": {
-      backgroundColor: "var(--color-frontend-dark)",
+    ".toast-primary": {
+      backgroundColor: "var(--color-primary-dark)",
     },
-    ".toast-design": {
-      backgroundColor: "var(--color-design-medium)",
+    ".toast-secondary": {
+      backgroundColor: "var(--color-secondary)",
     },
-    ".toast-backend": {
-      backgroundColor: "var(--color-backend-medium)",
+    ".toast-accent": {
+      backgroundColor: "var(--color-accent)",
     },
     ".toast-success": {
       backgroundColor: "var(--color-success)",
     },
-    ".toast-neutral": {
-      backgroundColor: "var(--color-neutral-medium)",
+    ".toast-muted": {
+      backgroundColor: "var(--color-muted)",
     },
   };
 };

@@ -5,7 +5,7 @@ module.exports = function checkboxComponent() {
       width: "1.25rem",
       height: "1.25rem",
       borderRadius: "0.25rem",
-      border: "2px solid var(--color-neutral-medium)",
+      border: "2px solid var(--color-muted)",
       cursor: "pointer",
       outline: "none",
       transition: "background-color 200ms ease-in-out, border-color 200ms ease-in-out",

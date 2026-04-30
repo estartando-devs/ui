@@ -8,7 +8,7 @@ module.exports = function tooltipComponent() {
       position: "absolute",
       zIndex: "50",
       padding: "0.5rem 1rem",
-      backgroundColor: "var(--color-frontend-dark)",
+      backgroundColor: "var(--color-primary-dark)",
       color: "#ffffff",
       fontSize: "0.875rem",
       fontWeight: "700",

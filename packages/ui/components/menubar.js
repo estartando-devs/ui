@@ -22,5 +22,9 @@ module.exports = function menubarComponent() {
     ".menubar-trigger:hover, .menubar-trigger[data-state='open']": {
       backgroundColor: "color-mix(in srgb, var(--color-foreground) 10%, transparent)",
     },
+    ".menubar-trigger:focus-visible": {
+      outline: "none",
+      boxShadow: "0 0 0 3px color-mix(in srgb, var(--color-ring) 50%, transparent)",
+    },
   };
 };

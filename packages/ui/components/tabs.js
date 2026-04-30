@@ -20,8 +20,13 @@ module.exports = function tabsComponent() {
       transition: "all 200ms ease-in-out",
     },
     ".tabs-trigger[data-state='active']": {
-      borderColor: "var(--color-design-medium)",
+      borderColor: "var(--color-secondary)",
       color: "var(--color-foreground)",
+    },
+    ".tabs-trigger:focus-visible": {
+      outline: "none",
+      boxShadow: "0 0 0 3px color-mix(in srgb, var(--color-ring) 50%, transparent)",
+      borderRadius: "var(--radius-sm)",
     },
     ".tabs-content": {
       marginTop: "1rem",

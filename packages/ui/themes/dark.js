@@ -13,33 +13,27 @@ module.exports = {
   "--color-popover": "#272626",
   "--color-popover-foreground": "#ffffff",
 
-  /* ── Brand ────────────────────────────────────────── */
-  "--color-primary": "#81caa8",
+  /* ── Brand / Semantic Colors ──────────────────────── */
+  "--color-primary-light": "#ACCABC",
+  "--color-primary": "#A8CABC",
+  "--color-primary-dark": "#00BFA6",
   "--color-primary-foreground": "#ffffff",
-  "--color-primary-light": "#81e7a8",
-  "--color-secondary": "#323232",
+
+  "--color-secondary-light": "#9799FF",
+  "--color-secondary": "#6C63FF",
+  "--color-secondary-dark": "#4C45B2",
   "--color-secondary-foreground": "#ffffff",
-  "--color-accent": "#00bfa6",
+
+  "--color-accent-light": "#A0D1E9",
+  "--color-accent": "#1EC0D6",
+  "--color-accent-dark": "#2094B3",
   "--color-accent-foreground": "#ffffff",
-  "--color-brand-purple": "#6c63ff",
-  "--color-brand-teal": "#00bfa6",
 
-  /* ── Domains (Frontend, Design, Backend) ───────────── */
-  "--color-neutral-light": "#F8F8F8",
-  "--color-neutral-medium": "#606062",
-  "--color-neutral-dark": "#161616",
+  "--color-muted-light": "#F8F8F8",
+  "--color-muted-dark": "#161616",
 
-  "--color-frontend-light": "#ACCABC",
-  "--color-frontend-medium": "#A8CABC",
-  "--color-frontend-dark": "#00BFA6",
-
-  "--color-design-light": "#9799FF",
-  "--color-design-medium": "#6C63FF",
-  "--color-design-dark": "#4C45B2",
-
-  "--color-backend-light": "#A0D1E9",
-  "--color-backend-medium": "#1EC0D6",
-  "--color-backend-dark": "#2094B3",
+  "--color-brand-purple": "#6C63FF",
+  "--color-brand-teal": "#00BFA6",
 
   /* ── Semantic ─────────────────────────────────────── */
   "--color-muted": "#323232",

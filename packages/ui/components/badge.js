@@ -17,21 +17,21 @@ module.exports = function badgeComponent() {
       fontSize: "0.75rem",
       lineHeight: "1rem",
     },
-    ".badge-frontend": {
-      backgroundColor: "var(--color-frontend-light)",
-      color: "var(--color-frontend-dark)",
+    ".badge-primary": {
+      backgroundColor: "var(--color-primary-light)",
+      color: "var(--color-primary-dark)",
     },
-    ".badge-design": {
-      backgroundColor: "var(--color-design-light)",
-      color: "var(--color-design-dark)",
+    ".badge-secondary": {
+      backgroundColor: "var(--color-secondary-light)",
+      color: "var(--color-secondary-dark)",
     },
-    ".badge-backend": {
-      backgroundColor: "var(--color-backend-light)",
-      color: "var(--color-backend-dark)",
+    ".badge-accent": {
+      backgroundColor: "var(--color-accent-light)",
+      color: "var(--color-accent-dark)",
     },
-    ".badge-neutral": {
-      backgroundColor: "var(--color-neutral-light)",
-      color: "var(--color-neutral-dark)",
+    ".badge-muted": {
+      backgroundColor: "var(--color-muted-light)",
+      color: "var(--color-muted-dark)",
     },
   };
 };

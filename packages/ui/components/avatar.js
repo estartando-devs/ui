@@ -6,7 +6,7 @@ module.exports = function avatarComponent() {
       justifyContent: "center",
       borderRadius: "9999px",
       overflow: "hidden",
-      backgroundColor: "var(--color-neutral-medium)",
+      backgroundColor: "var(--color-muted)",
       color: "#ffffff",
       fontWeight: "700",
       fontFamily: "var(--font-heading, 'Ubuntu', ui-sans-serif, system-ui, sans-serif)",
@@ -26,17 +26,17 @@ module.exports = function avatarComponent() {
       height: "4rem",
       fontSize: "1.25rem",
     },
-    ".avatar-frontend": {
-      backgroundColor: "var(--color-frontend-dark)",
+    ".avatar-primary": {
+      backgroundColor: "var(--color-primary-dark)",
     },
-    ".avatar-design": {
-      backgroundColor: "var(--color-design-medium)",
+    ".avatar-secondary": {
+      backgroundColor: "var(--color-secondary)",
     },
-    ".avatar-backend": {
-      backgroundColor: "var(--color-backend-medium)",
+    ".avatar-accent": {
+      backgroundColor: "var(--color-accent)",
     },
-    ".avatar-neutral": {
-      backgroundColor: "var(--color-neutral-medium)",
+    ".avatar-muted": {
+      backgroundColor: "var(--color-muted)",
     },
   };
 };

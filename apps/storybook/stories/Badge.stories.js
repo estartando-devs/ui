@@ -8,7 +8,7 @@ export default {
     label: { control: 'text' },
     variant: {
       control: { type: 'select' },
-      options: ['frontend', 'design', 'backend', 'neutral'],
+      options: ['primary', 'secondary', 'accent', 'muted'],
     },
     size: {
       control: { type: 'radio' },
@@ -17,34 +17,34 @@ export default {
   },
 };
 
-export const Frontend = {
+export const Primary = {
   args: {
-    label: 'Frontend',
-    variant: 'frontend',
+    label: 'Primary',
+    variant: 'primary',
     size: 'default',
   },
 };
 
-export const Design = {
+export const Secondary = {
   args: {
-    label: 'Design',
-    variant: 'design',
+    label: 'Secondary',
+    variant: 'secondary',
     size: 'default',
   },
 };
 
-export const Backend = {
+export const Accent = {
   args: {
-    label: 'Backend',
-    variant: 'backend',
+    label: 'Accent',
+    variant: 'accent',
     size: 'default',
   },
 };
 
-export const Neutral = {
+export const Muted = {
   args: {
-    label: 'Neutral',
-    variant: 'neutral',
+    label: 'Muted',
+    variant: 'muted',
     size: 'default',
   },
 };

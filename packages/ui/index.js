@@ -74,18 +74,25 @@ module.exports = plugin.withOptions(
               DEFAULT: "var(--color-primary)",
               foreground: "var(--color-primary-foreground)",
               light: "var(--color-primary-light)",
+              dark: "var(--color-primary-dark)",
             },
             secondary: {
               DEFAULT: "var(--color-secondary)",
               foreground: "var(--color-secondary-foreground)",
+              light: "var(--color-secondary-light)",
+              dark: "var(--color-secondary-dark)",
             },
             accent: {
               DEFAULT: "var(--color-accent)",
               foreground: "var(--color-accent-foreground)",
+              light: "var(--color-accent-light)",
+              dark: "var(--color-accent-dark)",
             },
             muted: {
               DEFAULT: "var(--color-muted)",
               foreground: "var(--color-muted-foreground)",
+              light: "var(--color-muted-light)",
+              dark: "var(--color-muted-dark)",
             },
             destructive: "var(--color-destructive)",
             success: {
@@ -105,26 +112,6 @@ module.exports = plugin.withOptions(
             ring: "var(--color-ring)",
             "brand-purple": "var(--color-brand-purple)",
             "brand-teal": "var(--color-brand-teal)",
-            neutral: {
-              light: "var(--color-neutral-light)",
-              medium: "var(--color-neutral-medium)",
-              dark: "var(--color-neutral-dark)",
-            },
-            frontend: {
-              light: "var(--color-frontend-light)",
-              medium: "var(--color-frontend-medium)",
-              dark: "var(--color-frontend-dark)",
-            },
-            design: {
-              light: "var(--color-design-light)",
-              medium: "var(--color-design-medium)",
-              dark: "var(--color-design-dark)",
-            },
-            backend: {
-              light: "var(--color-backend-light)",
-              medium: "var(--color-backend-medium)",
-              dark: "var(--color-backend-dark)",
-            },
           },
           borderRadius: {
             sm: "var(--radius-sm)",

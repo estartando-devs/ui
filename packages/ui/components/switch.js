@@ -9,7 +9,7 @@ module.exports = function switchComponent() {
     ".switch-track": {
       width: "3rem",
       height: "1.75rem",
-      backgroundColor: "var(--color-neutral-medium)",
+      backgroundColor: "var(--color-muted)",
       borderRadius: "9999px",
       transition: "background-color 200ms ease-in-out",
       position: "relative",
@@ -24,13 +24,18 @@ module.exports = function switchComponent() {
       borderRadius: "9999px",
       transition: "transform 200ms ease-in-out",
     },
-    ".switch[data-state='checked'] .switch-track": {
+    /* Sibling selectors for native input integration */
+    "input[type='checkbox']:checked + .switch-track, .switch[data-state='checked'] .switch-track": {
       backgroundColor: "var(--color-primary)",
     },
-    ".switch[data-state='checked'] .switch-thumb": {
+    "input[type='checkbox']:checked + .switch-track .switch-thumb, .switch[data-state='checked'] .switch-thumb": {
       transform: "translateX(1.25rem)",
     },
-    ".switch-disabled, .switch:disabled": {
+    "input[type='checkbox']:focus-visible + .switch-track": {
+      boxShadow: "0 0 0 3px color-mix(in srgb, var(--color-ring) 50%, transparent)",
+      outline: "none",
+    },
+    "input[type='checkbox']:disabled + .switch-track, .switch-disabled, .switch:disabled": {
       opacity: "0.5",
       cursor: "not-allowed",
       pointerEvents: "none",

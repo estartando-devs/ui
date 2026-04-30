@@ -5,7 +5,7 @@ module.exports = function radioComponent() {
       width: "1.25rem",
       height: "1.25rem",
       borderRadius: "9999px",
-      border: "2px solid var(--color-neutral-medium)",
+      border: "2px solid var(--color-muted)",
       cursor: "pointer",
       outline: "none",
       transition: "background-color 200ms ease-in-out, border-color 200ms ease-in-out",

@@ -24,8 +24,12 @@ module.exports = function toolbarComponent() {
     },
     ".toolbar-button[data-state='active']": {
       backgroundColor: "var(--color-background)",
-      color: "var(--color-design-medium)",
+      color: "var(--color-secondary)",
       boxShadow: "var(--shadow-sm)",
+    },
+    ".toolbar-button:focus-visible": {
+      outline: "none",
+      boxShadow: "0 0 0 3px color-mix(in srgb, var(--color-ring) 50%, transparent)",
     },
   };
 };

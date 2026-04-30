@@ -8,7 +8,7 @@ export default {
     initials: { control: 'text' },
     variant: {
       control: { type: 'select' },
-      options: ['frontend', 'design', 'backend', 'neutral'],
+      options: ['primary', 'secondary', 'accent', 'muted'],
     },
     size: {
       control: { type: 'select' },
@@ -17,34 +17,34 @@ export default {
   },
 };
 
-export const Frontend = {
+export const Primary = {
   args: {
-    initials: 'FD',
-    variant: 'frontend',
+    initials: 'PR',
+    variant: 'primary',
     size: 'md',
   },
 };
 
-export const Design = {
+export const Secondary = {
   args: {
-    initials: 'DS',
-    variant: 'design',
+    initials: 'SC',
+    variant: 'secondary',
     size: 'lg',
   },
 };
 
-export const Backend = {
+export const Accent = {
   args: {
-    initials: 'BE',
-    variant: 'backend',
+    initials: 'AC',
+    variant: 'accent',
     size: 'lg',
   },
 };
 
-export const NeutralSmall = {
+export const MutedSmall = {
   args: {
-    initials: 'NT',
-    variant: 'neutral',
+    initials: 'MT',
+    variant: 'muted',
     size: 'sm',
   },
 };
