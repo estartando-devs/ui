@@ -1,45 +1,35 @@
-# @estartando/ui — Monorepo
+# @estartando/ui
 
 [![license](https://img.shields.io/npm/l/@estartando/ui.svg)](./LICENSE)
 
-Repositório da biblioteca de UI e componentes do **Estartando Devs**, gerenciado com Bun Workspaces.
+Biblioteca de componentes de UI do **Estartando Devs**.
 
-## Pacotes
+## Estrutura
 
-| Pacote | Descrição | Diretório |
+| Aplicação/Pacote | Descrição | Diretório |
 |---|---|---|
 | [`@estartando/ui`](./packages/ui) | Biblioteca de componentes de UI | `packages/ui` |
-| `@estartando/example` | App de demonstração dos componentes | `packages/example` |
+| `@estartando/docs` | Documentação oficial da biblioteca | `apps/docs` |
+| `@estartando/storybook` | Ambiente de desenvolvimento interativo dos componentes | `apps/storybook` |
 
-## Setup
+## Setup Local
 
 ```bash
-# Instalar Bun (se necessário)
-curl -fsSL https://bun.sh/install | bash
-
 # Instalar dependências
 bun install
 ```
 
-## Scripts
+## Scripts de Desenvolvimento
 
 ```bash
-# Iniciar o app de exemplo
-bun run dev:example
+# Iniciar a Documentação
+bun run dev:docs
 
-# Executar lint em todos os pacotes
+# Iniciar o Storybook
+bun run dev:storybook
+
+# Executar lint em todo o projeto
 bun run lint
-```
-
-## Estrutura
-
-```
-├── package.json
-├── bun.lock
-├── LICENSE
-└── packages/
-    ├── ui/               ← @estartando/ui (publicado no npm)
-    └── example/          ← App de demonstração
 ```
 
 ## Licença
