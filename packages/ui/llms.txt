@@ -1,0 +1,168 @@
+---
+description: @estartando/ui 0.1
+alwaysApply: true
+applyTo: "**"
+downloadedFrom: https://raw.githubusercontent.com/estartando-devs/ui/main/packages/ui/llms.txt
+version: 0.1.1
+---
+
+# @estartando/ui
+`@estartando/ui` is a modular Tailwind CSS plugin that provides design tokens and components for the Estartando Devs design system. It uses semantic class names inspired by shadcn/ui and daisyUI.
+
+- [GitHub Repository](https://github.com/estartando-devs/ui)
+
+## @estartando/ui usage rules
+1. Components are styled using simple CSS class names (e.g., `btn`, `card`).
+2. Components can be customized using Tailwind CSS utility classes.
+3. Use the predefined semantic colors (e.g., `bg-primary`, `text-destructive-foreground`).
+4. The plugin automatically provides CSS variables like `var(--radius-lg)` or `var(--color-primary)` via its theme configurations.
+5. Instead of inline arbitrary values, rely on the provided utility classes and component classes.
+6. The design uses rounded corners (e.g., `rounded-xl`, `rounded-lg`) and a specific outline/ring pattern on focus (`focus-visible:ring`).
+
+## Config
+To use the plugin, add it to your CSS file:
+```css
+@import "tailwindcss";
+@plugin "@estartando/ui";
+```
+
+## @estartando/ui colors
+
+Semantic color names available as Tailwind utilities (e.g., `bg-primary`, `text-primary-foreground`):
+- `background`: Base page background color
+- `foreground`: Base text color
+- `card`: Card background color
+- `card-foreground`: Card text color
+- `popover`: Popover background color
+- `popover-foreground`: Popover text color
+- `primary`: Main brand color
+- `primary-foreground`: Text color on primary background
+- `secondary`: Secondary brand color
+- `secondary-foreground`: Text color on secondary background
+- `accent`: Accent color
+- `accent-foreground`: Text color on accent background
+- `destructive`: Error/destructive actions background
+- `success`: Success state background
+- `success-foreground`: Text color on success background
+- `warning`: Warning state background
+- `warning-foreground`: Text color on warning background
+- `info`: Information state background
+- `info-foreground`: Text color on info background
+- `muted`: Muted background
+- `muted-foreground`: Muted text
+- `border`: Border color
+- `input`: Input border color
+- `ring`: Focus ring color
+
+## @estartando/ui components
+
+### accordion
+Used for collapsible content sections.
+- component: `accordion`
+- parts: `accordion-item`, `accordion-header`, `accordion-trigger`, `accordion-content`
+
+### alert-dialog
+A modal dialog that interrupts the user with important content and expects a response.
+- component: `alert-dialog`
+- parts: `alert-dialog-overlay`, `alert-dialog-content`, `alert-dialog-header`, `alert-dialog-title`, `alert-dialog-description`, `alert-dialog-footer`, `alert-dialog-cancel`, `alert-dialog-action`
+
+### avatar
+An image element with a fallback for representing the user.
+- component: `avatar`
+- parts: `avatar-image`, `avatar-fallback`
+
+### badge
+Displays a badge or a component that looks like a badge.
+- component: `badge`
+- variants: `badge-primary`, `badge-secondary`, `badge-destructive`, `badge-outline`
+
+### button
+Triggers an action or event, such as submitting a form or displaying a dialog.
+- component: `btn`
+- colors: `btn-primary`, `btn-secondary`, `btn-accent`, `btn-destructive`, `btn-success`, `btn-warning`, `btn-info`
+- styles: `btn-outline`, `btn-ghost`, `btn-link`
+- sizes: `btn-xs`, `btn-sm`, `btn-md`, `btn-lg`
+- modifiers: `btn-block`, `btn-cta`
+
+#### Syntax
+```html
+<button class="btn btn-primary">Click me</button>
+```
+
+### card
+A container for grouping related content.
+- component: `card`
+- parts: `card-header`, `card-title`, `card-description`, `card-content`, `card-footer`, `card-actions`, `card-figure`
+- modifiers: `card-hover`, `card-elevated`, `card-bordered`, `card-compact`, `card-side`, `card-glass`
+
+#### Syntax
+```html
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Card Title</h3>
+    <p class="card-description">Description goes here</p>
+  </div>
+  <div class="card-content">Main content</div>
+  <div class="card-footer">
+    <div class="card-actions">
+      <button class="btn btn-primary">Action</button>
+    </div>
+  </div>
+</div>
+```
+
+### checkbox
+A control that allows the user to toggle between checked and not checked.
+- component: `checkbox`
+
+### input
+Displays a form input field.
+- component: `input`
+
+### menu
+Displays a menu to the user.
+- component: `menu`
+- parts: `menu-item`, `menu-label`, `menu-separator`
+
+### menubar
+A visually persistent menu common in desktop applications.
+- component: `menubar`
+- parts: `menubar-menu`, `menubar-trigger`, `menubar-content`, `menubar-item`
+
+### popover
+Displays rich content in a portal, triggered by a button.
+- component: `popover`
+- parts: `popover-trigger`, `popover-content`
+
+### radio
+A set of checkable buttons where no more than one of the buttons can be checked at a time.
+- component: `radio`
+
+### select
+Displays a list of options for the user to pick from.
+- component: `select`
+- parts: `select-trigger`, `select-content`, `select-item`
+
+### switch
+A control that allows the user to toggle between checked and not checked.
+- component: `switch`
+
+### tabs
+A set of layered sections of content that are displayed one at a time.
+- component: `tabs`
+- parts: `tabs-list`, `tabs-trigger`, `tabs-content`
+
+### toast
+A succinct message that is displayed temporarily.
+- component: `toast`
+- variants: `toast-default`, `toast-destructive`
+
+### toolbar
+A container for grouping a set of controls, such as buttons, dropdown menus, or input fields.
+- component: `toolbar`
+- parts: `toolbar-button`, `toolbar-separator`, `toolbar-link`
+
+### tooltip
+A popup that displays information related to an element when hovered or focused.
+- component: `tooltip`
+- parts: `tooltip-trigger`, `tooltip-content`
